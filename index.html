@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TechCon 2025 Event Showcase</title>
+  <link rel="stylesheet" href="styles/main.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>TechCon 2025 Event Schedule</h1>
+    <div class="controls">
+      <div class="filters">
+        <button data-type="All" class="active">All</button>
+        <button data-type="Talk">Talks</button>
+        <button data-type="Workshop">Workshops</button>
+        <button data-type="Panel">Panels</button>
+        <button data-type="Social">Social</button>
+      </div>
+      <input type="text" id="searchInput" placeholder="Search events..." />
+      <button id="themeToggle" aria-label="Toggle theme">🌙</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="event-container" aria-live="polite"></section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 TechCon | Designed by <strong>Your Name</strong></p>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>
